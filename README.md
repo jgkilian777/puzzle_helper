@@ -11,7 +11,7 @@ https://github.com/xwjabc/hed
 
 
 
-install and stuff:
+Installation:
 
 https://github.com/zhuoinoulu/pidinet
 
