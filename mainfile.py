@@ -20,14 +20,14 @@ for i in range(len(images)):
 	images[i]=inputImgsPath+images[i]
 
 
-maxXDimensionJustForMachingLearningContours = 3024
+maxXDimensionJustForMachineLearningContours = 3024
 
 imgMaximumXDimension=1512
 # imgMaximumXDimension=756
 
 allImageContours=[]
 
-allImageContours, avgPieceMaterialColour, baseImageReferenceContourArea, baseImageReferenceContourIndPair = getPidiContours(images, maxXDimensionJustForMachingLearningContours, imgMaximumXDimension, inputImgsPath)
+allImageContours, avgPieceMaterialColour, baseImageReferenceContourArea, baseImageReferenceContourIndPair = getPidiContours(images, maxXDimensionJustForMachineLearningContours, imgMaximumXDimension, inputImgsPath)
 maxydim=0
 
 for i, imageContours in enumerate(allImageContours):

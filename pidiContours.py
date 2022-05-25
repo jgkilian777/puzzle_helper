@@ -26,7 +26,7 @@ import torch.nn.functional as F
 import torch.backends.cudnn as cudnn
 
 
-def getPidiContours(imagesList, maxXDimensionJustForMachingLearningContours, imgMaximumXDimension, inputImgsPath):
+def getPidiContours(imagesList, maxXDimensionJustForMachineLearningContours, imgMaximumXDimension, inputImgsPath):
 	
 	parser = argparse.ArgumentParser(description='PyTorch Pixel Difference Convolutional Networks')
 
@@ -120,8 +120,8 @@ def getPidiContours(imagesList, maxXDimensionJustForMachingLearningContours, img
 	for i, imagePath in enumerate(imagesList):
 		im = cv2.imread(imagePath)
 		
-		if im.shape[1] > maxXDimensionJustForMachingLearningContours:
-			im = cv2.resize(im, (maxXDimensionJustForMachingLearningContours, round((maxXDimensionJustForMachingLearningContours/im.shape[1]) * im.shape[0])), interpolation=cv2.INTER_AREA)
+		if im.shape[1] > maxXDimensionJustForMachineLearningContours:
+			im = cv2.resize(im, (maxXDimensionJustForMachineLearningContours, round((maxXDimensionJustForMachineLearningContours/im.shape[1]) * im.shape[0])), interpolation=cv2.INTER_AREA)
 		newImgName = imagePath.split("/")[-1]
 		cv2.imwrite(args.datadir+'/'+newImgName, im)
 	
@@ -224,7 +224,7 @@ def getPidiContours(imagesList, maxXDimensionJustForMachingLearningContours, img
 				model.load_state_dict(checkpoint['state_dict'])
 		else:
 			raise ValueError('no checkpoint loaded')
-		allImageContours = test(test_loader, model, args.start_epoch, args, imgMaximumXDimension, maxXDimensionJustForMachingLearningContours, inputImgsPath)
+		allImageContours = test(test_loader, model, args.start_epoch, args, imgMaximumXDimension, maxXDimensionJustForMachineLearningContours, inputImgsPath)
 		print('##########Time########## %s' % (time.strftime('%Y-%m-%d %H:%M:%S')))
 		return allImageContours
 
@@ -243,7 +243,7 @@ def click_event(event, x, y, flags, param):
 mouseClicks=[]
 
 
-def test(test_loader, model, epoch, args, imgMaximumXDimension, maxXDimensionJustForMachingLearningContours, inputImgsPath):
+def test(test_loader, model, epoch, args, imgMaximumXDimension, maxXDimensionJustForMachineLearningContours, inputImgsPath):
 	
 	global mouseClicks
 	
