@@ -38,9 +38,13 @@ Parameters are currently tuned to work with images that have 1:1 aspect ratio, a
 Require at least one image as input. All images must have the same piece roughly in the center, oriented in the same direction in each image for consistency.
 One image must have a piece flipped over to expose the colour of the material that the pieces are made out of and this image must have the lowest alphanumeric file name (e.g. 0.jpg).
 
+The images should be taken with the camera (specifically image plane) being as parallel as possible to the table/piece plane.
+
+Flash should be on when the images are taken.
+
 Any time mainfile.py is run with a different set of images, make sure the pidiIMGS folder is empty and inputimgs folder only contains the new set of images.
 
-
+After running mainfile.py, press enter when prompted and when the first image is displayed click ... corners...
 
 args.use_cuda = False
 	# args.use_cuda = True
