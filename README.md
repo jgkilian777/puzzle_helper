@@ -33,6 +33,15 @@ In the main anaconda prompt run "python mainfile.py"
 
 Usage:
 
+Parameters are currently tuned to work with images that have 1:1 aspect ratio, around 3024x3024 resolution and with images taken at a distance from the pieces such that the long side of an A4 piece of paper roughly takes up the length of the image.
+
+Require at least one image as input. All images must have the same piece roughly in the center, oriented in the same direction in each image for consistency.
+One image must have a piece flipped over to expose the colour of the material that the pieces are made out of and this image must have the lowest alphanumeric file name (e.g. 0.jpg).
+
+Any time mainfile.py is run with a different set of images, make sure the pidiIMGS folder is empty and inputimgs folder only contains the new set of images.
+
+
+
 args.use_cuda = False
 	# args.use_cuda = True
   
