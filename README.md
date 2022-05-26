@@ -45,11 +45,17 @@ Flash should be on when the images are taken.
 Any time mainfile.py is run with a different set of images, make sure the pidiIMGS folder is empty and inputimgs folder only contains the new set of images.
 
 After running mainfile.py, press enter when prompted and when the first image is displayed click 2 diagonal corners of any piece then press a key e.g. spacebar
+
 ![An example of a piece with 2 diagonal corners circled](/../../../../jgkilian777/jgkilian777.github.io/blob/main/images/clickcorners.png)
+
 Then when prompted, click anywhere inside the reference piece that appears in every image for this batch and press a key
+
 ![An example of the reference piece with a circle inside](/../../../../jgkilian777/jgkilian777.github.io/blob/main/images/clickrefpiece.png)
+
 Lastly, when prompted, click inside the flipped piece that exposes the piece material that only appears in the first image and press a key
+
 ![An example of the flipped piece with a circle inside](/../../../../jgkilian777/jgkilian777.github.io/blob/main/images/clickpiecematerial.png)
+
 
 Then for each image after the first, repeat the steps above except for the flipped piece since that should only appear in the first image.
 
@@ -61,15 +67,4 @@ The main matching parameters can be found here: https://github.com/jgkilian777/p
 (start of mainEdgeSimilarity function)
 The specific parameters that should be tweaked to control compatibility constraints to allow for more matches with more false positives or less matches with faster runtime can be seen being referenced here: https://github.com/jgkilian777/puzzle_helper/blob/922b672c6b67b7cca52936257270583fe87c1876/edgeMatchingUtils.py#L3804
 (near the end of the parameters block of code under looseConstraints and/or tightColourConstraints conditional statements)
-
-args.use_cuda = False
-	# args.use_cuda = True
-  
-  disp=False
-	# disp=True
-  
-  # loadSavedMats=False
-		loadSavedMats=True
-    
-    
 
