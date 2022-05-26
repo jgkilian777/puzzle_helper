@@ -1,19 +1,15 @@
 # puzzle_helper
 
 
-refs:
+This project uses pidinet to get initial edge data which can be found at https://github.com/zhuoinoulu/pidinet
 
-https://github.com/zhuoinoulu/pidinet
+Like pidinet, I used some matlab code similar to hed https://github.com/xwjabc/hed
 
-https://github.com/xwjabc/hed
-
-
+This was a personal project focussing on developing a puzzle solving methodology that fully prioritised implementation speed over readability and good coding practices. There are debugging remnants, bad code structure, code duplication, unuseful object naming and (very rarely) inefficient code. I used notepad++ instead of an IDE.
 
 
 
-Installation:
-
-( https://github.com/zhuoinoulu/pidinet )
+# Installation:
 
 Download this repo
 
@@ -31,7 +27,7 @@ If successful, close the anaconda prompt window that was used with octave.
 
 In the main anaconda prompt run "python mainfile.py"
 
-Usage:
+# Usage:
 
 Parameters are currently tuned to work with images that have 1:1 aspect ratio, around 3024x3024 resolution and with images taken at a distance from the pieces such that the long side of an A4 piece of paper roughly takes up the length of the image.
 
