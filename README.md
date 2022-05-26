@@ -29,6 +29,8 @@ In the main anaconda prompt run "python mainfile.py"
 
 # Usage:
 
+Do not include outer pieces or corner pieces with 1+ flat sides.
+
 Parameters are currently tuned to work with images that have 1:1 aspect ratio, around 3024x3024 resolution and with images taken at a distance from the pieces such that the long side of an A4 piece of paper roughly takes up the length of the image.
 
 Require at least one image as input. All images must have the same piece roughly in the center, oriented in the same direction in each image for consistency.
