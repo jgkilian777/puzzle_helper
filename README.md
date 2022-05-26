@@ -46,6 +46,15 @@ Any time mainfile.py is run with a different set of images, make sure the pidiIM
 
 After running mainfile.py, press enter when prompted and when the first image is displayed click ... corners...
 
+When given results at the end, press a button e.g. spacebar to go through results, once true positive results start to be too sparse it's probably time to take new images of a different/remaining set of pieces and rerunning for more matches.
+
+If possible, shuffle orientation/position of remaining pieces rather than leaving them in the same place and adding a new batch of pieces.
+
+The main matching parameters can be found here: https://github.com/jgkilian777/puzzle_helper/blob/922b672c6b67b7cca52936257270583fe87c1876/edgeMatchingUtils.py#L3697
+(start of mainEdgeSimilarity function)
+The specific parameters that should be tweaked to control compatibility constraints to allow for more matches with more false positives or less matches with faster runtime can be seen being referenced here: https://github.com/jgkilian777/puzzle_helper/blob/922b672c6b67b7cca52936257270583fe87c1876/edgeMatchingUtils.py#L3804
+(near the end of the parameters block of code under looseConstraints and/or tightColourConstraints conditional statements)
+
 args.use_cuda = False
 	# args.use_cuda = True
   
