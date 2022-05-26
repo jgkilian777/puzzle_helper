@@ -107,8 +107,8 @@ def getPidiContours(imagesList, maxXDimensionJustForMachineLearningContours, img
 	
 	# args.evaluate="pidistuff/models/table5_pidinet.pth"
 	args.evaluate_converted=True
-	args.use_cuda = False
-	# args.use_cuda = True
+	# args.use_cuda = False
+	args.use_cuda = True
 	args.workers=0
 	
 	os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
