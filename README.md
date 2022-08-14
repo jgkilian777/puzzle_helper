@@ -44,15 +44,15 @@ Any time mainfile.py is run with a different set of images, make sure the pidiIM
 
 After running mainfile.py, press enter when prompted and when the first image is displayed click 2 diagonal corners of any piece then press a key e.g. spacebar
 
-![An example of a piece with 2 diagonal corners circled](/../../../../jgkilian777/jgkilian777.github.io/blob/main/images/clickcorners.png)
+![An example of a piece with 2 diagonal corners circled](docImgs/clickcorners.png)
 
 Then when prompted, click anywhere inside the reference piece that appears in every image for this batch and press a key
 
-![An example of the reference piece with a circle inside](/../../../../jgkilian777/jgkilian777.github.io/blob/main/images/clickrefpiece.png)
+![An example of the reference piece with a circle inside](docImgs/clickrefpiece.png)
 
 Lastly, when prompted, click inside the flipped piece that exposes the piece material that only appears in the first image and press a key
 
-![An example of the flipped piece with a circle inside](/../../../../jgkilian777/jgkilian777.github.io/blob/main/images/clickpiecematerial.png)
+![An example of the flipped piece with a circle inside](docImgs/clickpiecematerial.png)
 
 
 Then for each image after the first, repeat the steps above except for the flipped piece since that should only appear in the first image.
