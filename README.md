@@ -1,9 +1,7 @@
 # puzzle_helper
 
 Have a scroll through the details of how the project progressed at https://jgkilian777.github.io/puzzlehelper/puzzlehelper
-  
-  
-  
+<br/><br/>
 This project uses pidinet to get initial edge data which can be found at https://github.com/zhuoinoulu/pidinet
 
 Like pidinet, I used some matlab code similar to hed https://github.com/xwjabc/hed
